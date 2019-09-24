@@ -1,0 +1,64 @@
+body{
+    background-color: lightgoldenrodyellow;
+    user-select: none;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 4px;
+    background-color: black;
+    padding: 4px;
+    border-radius: 7px;
+    max-width: 400px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.item{
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form{
+    max-width: 100%;
+}
+
+input{
+    width: 100%;
+    height: 70px;
+    border: none;
+    outline: none;
+    font-size: 37px;
+    text-align: right;
+}
+
+.input{
+    grid-column: 1/-1;
+    padding: 0;
+}
+
+.clean{
+    grid-column: 1/3;
+    background-color: orange;
+}
+
+.back{
+    grid-column: 3/-1;
+}
+
+.zero{
+    grid-column: 1/3;
+}
+
+.equal{
+    grid-row: 6/8;
+    grid-column: 4;
+    background-color: gray;
+}
